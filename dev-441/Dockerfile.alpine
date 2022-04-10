@@ -1,4 +1,4 @@
-FROM alpine:3.7 as builder
+FROM alpine:3.12.12 as builder
 
 RUN echo '@alpine36 http://dl-cdn.alpinelinux.org/alpine/v3.6/main' >> /etc/apk/repositories
 
@@ -89,7 +89,7 @@ RUN apk add --no-cache build-base linux-headers libffi-dev autoconf automake lib
 
 
 # start fresh without build dependencies
-FROM alpine:3.7
+FROM alpine:3.12.12
 
 ARG uid=1001
 ARG gid=1001
