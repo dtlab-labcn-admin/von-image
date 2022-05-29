@@ -159,7 +159,7 @@ RUN pip install --no-cache-dir --user -r requirements.txt && rm requirements.txt
 
 
 ## Start fresh (new image) ##
-FROM debian:buster-slim
+FROM debian:10.12-slim
 
 
 ARG uid=1001
