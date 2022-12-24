@@ -8,3 +8,4 @@ cython
 python-rocksdb==0.7.0
 indy-node==1.12.4
 git+https://github.com/hyperledger/indy-plenum.git@0bbf5c84fc11290cee4272649eb8288de0fa756d#egg=indy-plenum
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
