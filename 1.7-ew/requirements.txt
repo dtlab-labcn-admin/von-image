@@ -10,3 +10,4 @@ indy-plenum-dev==1.6.566
 von-anchor==1.7.1
 didauth==1.2.3
 git+git://github.com/PSPC-SPAC-buyandsell/von-x.git@v1.4.7
+ujson>=5.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
