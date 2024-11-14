@@ -1,4 +1,4 @@
-FROM ubuntu:16.04 as builder
+FROM ubuntu:xenial-20210114 as builder
 
 ARG user=indy
 ENV HOME="/home/$user"
@@ -135,7 +135,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 
 ## Start fresh (new image) ##
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210114
 
 
 ARG uid=1001
